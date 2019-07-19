@@ -42,6 +42,7 @@ An object that coordinates a group of related network data transfer tasks
 
 #### Example of Using JsonDecoder(Codable Protocol)
 * Helpful Link: [JsonDecoder](https://github.com/zijiazhai/parseJsonData)
+* [Parsing Json Cheat Sheet](https://github.com/udacity/ios-nd-networking/wiki/JSON-Parsing-Cheat-Sheet)
    ```swift
     import Foundation
 
