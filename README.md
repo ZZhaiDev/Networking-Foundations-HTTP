@@ -66,3 +66,26 @@ An object that coordinates a group of related network data transfer tasks
         print(error)
     }    
    ```
+   
+#### Json name VS Swift Struct name
+   ```swift
+   var json = """
+{
+    "food_name": "Lemon",
+    "taste": "sour",
+    "number of calories": 17
+}
+""".data(using: .utf8)!
+
+struct Food: Codable {
+    let name: String
+    let taste: String
+    let calories: Int
+    
+    enum CodingKeys: String, CodingKey {   
+        case name = "food_name"
+        case taste = "taste"
+        case calories = "number of calories"
+    }
+}
+   ```
