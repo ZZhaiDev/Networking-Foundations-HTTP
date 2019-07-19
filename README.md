@@ -39,3 +39,30 @@ An object that coordinates a group of related network data transfer tasks
 #### Jsonserialization VS Codable Protocol
 * The old way to do json parsing in ios was using `json serialization`. Using that you had to map out all of the keys manually yourself. So, you had to translate all of it into a dictionary, and then know exactly where the keys were and how they mapped out.
 * But with the `new codable protocol`, as long as you create object that adheres to the protocol and has all of the properties that directly match to the json, apple will do the work for you.
+
+#### Example of Using JsonDecoder(Codable Protocol)
+* Helpful Link: [JsonDecoder](https://github.com/zijiazhai/parseJsonData)
+   ```swift
+    import Foundation
+
+    var json = """
+      {
+      "name": "Earth",
+      "type": "rocky",
+      "standardGravity": 9.81,
+      "hoursInDay": 24
+      }""".data(using: .utf8)!
+    struct Planet: Codable {
+        let name: String
+        let type: String
+        let standardGravity: Double
+        let hoursInDay: Int
+    }
+    let decoder = JSONDecoder()
+    do {
+        let earth = try decoder.decode(Planet.self, from: json)
+        print(earth)
+    } catch {
+        print(error)
+    }    
+   ```
