@@ -6,6 +6,16 @@
 * Enter name App Transport Security Settings & Allow Arbitrary Loads to YES Allows URL request
 * Reload imageView in main thread
 
+### random dog
+* Store URL string by Enum Endpoint
+* Struct Model
+* Picker View
+* Completion Handler
+<p float="left">
+<img width="139" height="301" src="https://github.com/zijiazhai/Networking-Foundations-HTTP/blob/master/images/randomDog.png">
+</p>
+
+
 ## Basic Knowledge
 #### Get, Post, Put, Patch, Detele
 * `Get` allows you to receive data from some type of api or networking call. 
