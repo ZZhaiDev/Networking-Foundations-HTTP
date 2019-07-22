@@ -1,4 +1,12 @@
 # Networking-Foundations-HTTP
+## Projects
+### Image Request
+* Store URL string by Enum
+* Make API call by URLSession
+* Enter name App Transport Security Settings & Allow Arbitrary Loads to YES Allows URL request
+* Reload imageView in main thread
+
+## Basic Knowledge
 #### Get, Post, Put, Patch, Detele
 * `Get` allows you to receive data from some type of api or networking call. 
 * `Post` request allows you to send data.
