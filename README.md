@@ -110,7 +110,7 @@ struct Food: Codable {
    ```
    
 #### Authentication Flow
-* 1. Creating the request token
-* 2. Validating the request token
-* 3. Creating the session ID
-* 4. Deleting the session(Logging out)
+1. Creating the request token
+2. Validating the request token
+3. Creating the session ID
+4. Deleting the session(Logging out)
