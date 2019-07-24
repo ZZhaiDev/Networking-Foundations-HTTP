@@ -1,24 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FVL-eb-C7J">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Login View Controller-->
+        <scene sceneID="teB-4T-LLz">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="FVL-eb-C7J" customClass="LoginViewController" customModule="TheMovieManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Esa-Up-nMd" customClass="GradientView" customModule="TheMovieManager" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera" translatesAutoresizingMaskIntoConstraints="NO" id="AyO-40-7O2">
+                                <rect key="frame" x="16" y="20" width="343" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="jIF-bG-bY2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Movie Manager" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zE6-Xt-MCj">
+                                <rect key="frame" x="16" y="156" width="343" height="31.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="0T4-Pv-2Qf">
+                                <rect key="frame" x="16" y="229" width="343" height="229"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login with Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qf3-6W-W2D">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gs9-qT-Ub9" customClass="LoginTextField" customModule="TheMovieManager" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="32.5" width="343" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="zMH-fn-KU2"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.095559306442737579" green="0.41543948650360107" blue="0.54881942272186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0Kq-Fv-BO0" customClass="LoginTextField" customModule="TheMovieManager" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="76.5" width="343" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="Kuv-mh-Yhw"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVU-Ln-kWZ" customClass="LoginButton" customModule="TheMovieManager" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="120.5" width="343" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="icg-qt-qti"/>
+                                        </constraints>
+                                        <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="loginTapped:" destination="FVL-eb-C7J" eventType="touchUpInside" id="57L-qz-tqO"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1K-5X-kdE">
+                                        <rect key="frame" x="0.0" y="164.5" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPZ-iW-UEG" customClass="LoginButton" customModule="TheMovieManager" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="197" width="343" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="11N-Vp-fa8"/>
+                                        </constraints>
+                                        <state key="normal" title="Login via Website"/>
+                                        <connections>
+                                            <action selector="loginViaWebsiteTapped" destination="FVL-eb-C7J" eventType="touchUpInside" id="G4g-pa-glO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This product uses the TMDb API but is not endorsed or certified by TMDb." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3q-DE-HO1">
+                                <rect key="frame" x="16" y="606" width="343" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0078431372550000003" green="0.70196078429999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zE6-Xt-MCj" firstAttribute="top" secondItem="AyO-40-7O2" secondAttribute="bottom" constant="8" id="3rt-9I-ORQ"/>
+                            <constraint firstItem="S3q-DE-HO1" firstAttribute="leading" secondItem="JRU-GN-blu" secondAttribute="leading" constant="16" id="5Xo-ge-5ls"/>
+                            <constraint firstItem="JRU-GN-blu" firstAttribute="trailing" secondItem="AyO-40-7O2" secondAttribute="trailing" constant="16" id="PX1-vE-1Ta"/>
+                            <constraint firstItem="0T4-Pv-2Qf" firstAttribute="leading" secondItem="JRU-GN-blu" secondAttribute="leading" constant="16" id="PaE-UD-aEO"/>
+                            <constraint firstItem="AyO-40-7O2" firstAttribute="top" secondItem="JRU-GN-blu" secondAttribute="top" id="aMg-xu-Boi"/>
+                            <constraint firstItem="JRU-GN-blu" firstAttribute="trailing" secondItem="S3q-DE-HO1" secondAttribute="trailing" constant="16" id="bvr-hH-rTw"/>
+                            <constraint firstItem="JRU-GN-blu" firstAttribute="trailing" secondItem="zE6-Xt-MCj" secondAttribute="trailing" constant="16" id="dVb-sY-jVU"/>
+                            <constraint firstItem="zE6-Xt-MCj" firstAttribute="leading" secondItem="JRU-GN-blu" secondAttribute="leading" constant="16" id="fO9-6w-Wdh"/>
+                            <constraint firstItem="JRU-GN-blu" firstAttribute="bottom" secondItem="S3q-DE-HO1" secondAttribute="bottom" constant="20" id="n6q-lE-ed5"/>
+                            <constraint firstItem="JRU-GN-blu" firstAttribute="trailing" secondItem="0T4-Pv-2Qf" secondAttribute="trailing" constant="16" id="qa6-dn-lCf"/>
+                            <constraint firstItem="0T4-Pv-2Qf" firstAttribute="centerY" secondItem="JRU-GN-blu" secondAttribute="centerY" id="rdS-bD-NtS"/>
+                            <constraint firstItem="AyO-40-7O2" firstAttribute="leading" secondItem="JRU-GN-blu" secondAttribute="leading" constant="16" id="wTc-Sy-2tY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JRU-GN-blu"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="gs9-qT-Ub9" id="fy1-0x-jph"/>
+                        <outlet property="loginButton" destination="aVU-Ln-kWZ" id="abE-fa-gK3"/>
+                        <outlet property="loginViaWebsiteButton" destination="mPZ-iW-UEG" id="U61-7o-9TQ"/>
+                        <outlet property="passwordTextField" destination="0Kq-Fv-BO0" id="kap-qX-7u3"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YKm-7n-vpf" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-2214" y="-359"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Camera" width="64" height="64"/>
+    </resources>
 </document>

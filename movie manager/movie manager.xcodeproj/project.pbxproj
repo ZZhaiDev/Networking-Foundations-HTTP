@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		3895796122E7D18F00C10B73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3895796022E7D18F00C10B73 /* AppDelegate.swift */; };
-		3895796322E7D18F00C10B73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3895796222E7D18F00C10B73 /* ViewController.swift */; };
 		3895796622E7D18F00C10B73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3895796422E7D18F00C10B73 /* Main.storyboard */; };
 		3895796822E7D19000C10B73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3895796722E7D19000C10B73 /* Assets.xcassets */; };
 		3895796B22E7D19000C10B73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3895796922E7D19000C10B73 /* LaunchScreen.storyboard */; };
 		3895797622E7D19000C10B73 /* movie_managerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3895797522E7D19000C10B73 /* movie_managerTests.swift */; };
 		3895798122E7D19000C10B73 /* movie_managerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3895798022E7D19000C10B73 /* movie_managerUITests.swift */; };
+		3895798F22E7D7C000C10B73 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3895798E22E7D7C000C10B73 /* LoginViewController.swift */; };
+		3895799522E7D8FC00C10B73 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3895799122E7D8FC00C10B73 /* LoginTextField.swift */; };
+		3895799622E7D8FC00C10B73 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3895799222E7D8FC00C10B73 /* Colors.swift */; };
+		3895799722E7D8FC00C10B73 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3895799322E7D8FC00C10B73 /* LoginButton.swift */; };
+		3895799822E7D8FC00C10B73 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3895799422E7D8FC00C10B73 /* GradientView.swift */; };
+		3895799A22E7DC5C00C10B73 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3895799922E7DC5C00C10B73 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,6 @@
 /* Begin PBXFileReference section */
 		3895795D22E7D18F00C10B73 /* movie manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "movie manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3895796022E7D18F00C10B73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3895796222E7D18F00C10B73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3895796522E7D18F00C10B73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3895796722E7D19000C10B73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3895796A22E7D19000C10B73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,12 @@
 		3895797C22E7D19000C10B73 /* movie managerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "movie managerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3895798022E7D19000C10B73 /* movie_managerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movie_managerUITests.swift; sourceTree = "<group>"; };
 		3895798222E7D19000C10B73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3895798E22E7D7C000C10B73 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3895799122E7D8FC00C10B73 /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		3895799222E7D8FC00C10B73 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		3895799322E7D8FC00C10B73 /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		3895799422E7D8FC00C10B73 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		3895799922E7DC5C00C10B73 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +107,12 @@
 		3895795F22E7D18F00C10B73 /* movie manager */ = {
 			isa = PBXGroup;
 			children = (
+				3895799022E7D8BF00C10B73 /* View */,
 				3895796022E7D18F00C10B73 /* AppDelegate.swift */,
-				3895796222E7D18F00C10B73 /* ViewController.swift */,
+				3895798E22E7D7C000C10B73 /* LoginViewController.swift */,
 				3895796422E7D18F00C10B73 /* Main.storyboard */,
 				3895796722E7D19000C10B73 /* Assets.xcassets */,
+				3895799922E7DC5C00C10B73 /* Colors.xcassets */,
 				3895796922E7D19000C10B73 /* LaunchScreen.storyboard */,
 				3895796C22E7D19000C10B73 /* Info.plist */,
 			);
@@ -123,6 +135,17 @@
 				3895798222E7D19000C10B73 /* Info.plist */,
 			);
 			path = "movie managerUITests";
+			sourceTree = "<group>";
+		};
+		3895799022E7D8BF00C10B73 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3895799222E7D8FC00C10B73 /* Colors.swift */,
+				3895799322E7D8FC00C10B73 /* LoginButton.swift */,
+				3895799422E7D8FC00C10B73 /* GradientView.swift */,
+				3895799122E7D8FC00C10B73 /* LoginTextField.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3895796B22E7D19000C10B73 /* LaunchScreen.storyboard in Resources */,
+				3895799A22E7DC5C00C10B73 /* Colors.xcassets in Resources */,
 				3895796822E7D19000C10B73 /* Assets.xcassets in Resources */,
 				3895796622E7D18F00C10B73 /* Main.storyboard in Resources */,
 			);
@@ -256,7 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3895796322E7D18F00C10B73 /* ViewController.swift in Sources */,
+				3895799722E7D8FC00C10B73 /* LoginButton.swift in Sources */,
+				3895799522E7D8FC00C10B73 /* LoginTextField.swift in Sources */,
+				3895799822E7D8FC00C10B73 /* GradientView.swift in Sources */,
+				3895799622E7D8FC00C10B73 /* Colors.swift in Sources */,
+				3895798F22E7D7C000C10B73 /* LoginViewController.swift in Sources */,
 				3895796122E7D18F00C10B73 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
