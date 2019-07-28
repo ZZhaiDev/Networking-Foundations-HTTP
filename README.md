@@ -6,7 +6,7 @@
 * Enter name App Transport Security Settings & Allow Arbitrary Loads to YES Allows URL request
 * Reload imageView in main thread
 
-### 2. Random dog
+### 2. Random Dog
 * Store URL string by Enum Endpoint
 * Struct Model
 * Picker View
@@ -117,4 +117,13 @@ struct Food: Codable {
 
 #### Network Link Conditioner
 A utility that allows macOS and iOS devices to accurately and consistently simulate adverse networking environments.
+
+#### Prevent Wasted Network Calls
+```swift
+var currentSearchTask: URLSessionTask?
+func APICall() {
+   currentSearchTask?.cancel()
+   currentSearchTask = NetworkTools.Apicall.......
+}
+```
 
