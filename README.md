@@ -126,4 +126,10 @@ func APICall() {
    currentSearchTask = NetworkTools.Apicall.......
 }
 ```
-
+#### Smooth User Experience
+* Placeholder images
+* Show network activity
+* Enable and disable UI Appropriately
+* Prevent wasted network calls
+* Handling Errors
+* Alert for login failure
