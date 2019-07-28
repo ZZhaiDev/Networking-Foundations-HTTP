@@ -1,12 +1,12 @@
 # Networking-Foundations-HTTP
 ## Projects
-### Image Request
+### 1. Image Request
 * Store URL string by Enum
 * Make API call by URLSession
 * Enter name App Transport Security Settings & Allow Arbitrary Loads to YES Allows URL request
 * Reload imageView in main thread
 
-### random dog
+### 2. Random dog
 * Store URL string by Enum Endpoint
 * Struct Model
 * Picker View
@@ -114,3 +114,7 @@ struct Food: Codable {
 2. Validating the request token
 3. Creating the session ID
 4. Deleting the session(Logging out)
+
+#### Network Link Conditioner
+A utility that allows macOS and iOS devices to accurately and consistently simulate adverse networking environments.
+
